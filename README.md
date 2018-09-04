@@ -1,1 +1,1 @@
-# isomorphic-react-app
+# isomorphic react app
