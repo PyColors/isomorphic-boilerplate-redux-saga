@@ -26,5 +26,16 @@ if (module.hot) {
     })
 }
 
-render(App);
+// render(App);
+
+store.subscribe(() => {
+    const state = store.getState();
+    if (state.questions.length > 0) {
+        console.log('coco Server Rendering');
+        render(App);
+    } else {
+        console.log('coco not Server Rendering');
+    }
+});
+
 fetchDataForLocation();
