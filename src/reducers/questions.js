@@ -1,4 +1,4 @@
-import unionWith from "lodash/unionWith";
+import unionWith from 'lodash/unionWith';
 
 export const questions = (state = [], { type, questions }) => {
     const questionEquality = (a = {}, b = {}) => {
