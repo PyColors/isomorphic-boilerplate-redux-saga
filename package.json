@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "An isomorphic React application",
   "main": "index.js",
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
   "scripts": {
     "test": "jest",
     "build": "cross-env webpack --config ./webpack.config.prod.babel.js",
