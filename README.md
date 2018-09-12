@@ -1,8 +1,8 @@
-# Isomorphic React App
+# Isomorphic React App ![N|Solid](https://travis-ci.org/PyColors/isomorphic-react-app.svg?branch=master)
 
-![N|Solid](https://agileengine.com/wordpress/wp-content/uploads/2016/09/redux-saga.png)
+![N|Solid](https://agileengine.com/wordpress/wp-content/uploads/2016/09/redux-saga.png) 
 
-Isomorphic React App is a Server-Side Rendering application with All Best Practices. 
+Isomorphic React App is a Server-Side Rendering application with All Best Practices.  
 
 ### Tech
 
