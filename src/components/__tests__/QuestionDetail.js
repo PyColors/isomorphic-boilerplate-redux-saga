@@ -1,4 +1,4 @@
-import { mapStateToProps } from '../QuestionDetail'
+import { mapStateToProps, QuestionDetailDisplay } from '../QuestionDetail'
 import renderer from 'react-test-renderer';
 import React from 'react';
 
@@ -26,7 +26,19 @@ describe(`The Question Detail <Component`, () => {
         });
     });
 
-    it(`Should not regress`, () => {
+    describe(`The display element`, () => {
+        it(`Should not regress`, () => {
+            const tree = renderer.create(
+                <QuestionDetailDisplay
+                    title="Lorem Ipsum"
+                    body="42"
+                    answer_count={0}
+                    tags={[`react`]}
+                />
+            );
 
+            expect(tree.toJSON()).toMatchSnapshot();
+        });
     });
+
 });
