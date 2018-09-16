@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import QuestionList from './components/QuestionList';
 import QuestionDetail from './components/QuestionDetail';
 import { Route, Link } from 'react-router-dom';
+import NotificationsViewer from './components/NotificationsViewer';
 
 const AppDisplay = () => (
     <div>
@@ -11,6 +12,11 @@ const AppDisplay = () => (
                 <h1>Isomorphic React App</h1>
             </Link>
         </div>
+
+        <div>
+            <NotificationsViewer />
+        </div>
+
         <div>
             <Route exact path="/" render={() => <QuestionList />} />
             <Route
