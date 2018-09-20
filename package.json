@@ -45,6 +45,7 @@
     "history": "^4.7.2",
     "isomorphic-fetch": "^2.2.1",
     "jest": "^22.3.0",
+    "jest-cli": "^23.6.0",
     "lodash": "^4.17.4",
     "optimist": "^0.6.1",
     "react": "^16.0.0",
