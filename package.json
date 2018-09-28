@@ -1,17 +1,18 @@
 {
   "name": "isomorphic-react-app",
-  "version": "1.0.0",
-  "description": "An isomorphic React application",
-  "main": "index.js",
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/"
   },
+  "version": "1.0.0",
+  "description": "An isomorphic React application",
+  "main": "index.js",
   "scripts": {
-    "test": "jest",
     "build": "cross-env webpack --config ./webpack.config.prod.babel.js",
     "start-dev": "cross-env NODE_ENV=development babel-node server --useLiveData=true --useServerRender=true",
-    "start-prod": "npm run build && cross-env NODE_ENV=production babel-node server --useServerRender=true --useLiveData=false"
+    "start-prod": "npm run build && cross-env NODE_ENV=production babel-node server --useServerRender=true --useLiveData=false",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -65,5 +66,8 @@
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.19.1"
+  },
+  "devDependencies": {
+    "nyc": "^13.0.1"
   }
 }
