@@ -11,6 +11,7 @@ Isomorphic React App uses a number of open source projects to work properly:
 * [React] - A JavaScript library for building user interfaces
 * [Redux] - Predictable state container for JavaScript apps
 * [redux-saga] - An alternative side effect model for Redux apps
+* [Jest] - Delightful JavaScript Testing
 * [Webpack] - Bundle assets scripts
 * [Babel] - The compiler for writing next generation JavaScript
 
@@ -73,9 +74,8 @@ MIT
 
 [//]: # 
    [dill]: <https://github.com/PyColors/isomorphic-react-app>
-   [git-repo-url]: <https://github.com/PyColors/choose-your-iPhone>
    [React]: <https://github.com/facebook/react>
-   [MUI]: <https://github.com/muicss/mui>
+   [Jest]: <https://github.com/facebook/jest>
    [Webpack]: <https://github.com/webpack/webpack>
    [Babel]: <https://babeljs.io/>
    [redux-saga]: <https://github.com/redux-saga/redux-saga>
