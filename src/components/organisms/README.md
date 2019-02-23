@@ -1,1 +1,1 @@
-This folder will contain any molecules that are specific
+This folder will contain any organisms that are specific

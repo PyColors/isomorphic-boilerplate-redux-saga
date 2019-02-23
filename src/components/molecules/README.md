@@ -1,1 +1,1 @@
-This folder will contain any atoms that are specific
+This folder will contain any molecules that are specific

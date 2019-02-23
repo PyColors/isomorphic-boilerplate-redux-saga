@@ -93,5 +93,4 @@ MIT
    [Babel]: <https://babeljs.io/>
    [redux-saga]: <https://github.com/redux-saga/redux-saga>
    [redux]: <https://github.com/reduxjs/redux>
-   
-# isomorphic-boilerplate-redux-saga
+
