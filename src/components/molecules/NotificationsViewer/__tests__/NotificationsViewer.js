@@ -7,9 +7,9 @@ import delay from "redux-saga";
  * NotificationsService is using as a mock
  * for local module
  */
-jest.mock("../../services/NotificationsService");
+jest.mock("../../../../services/NotificationsService");
 
-const notificationsService = require("../../services/NotificationsService")
+const notificationsService = require("../../../../services/NotificationsService")
     .default;
 
 describe("The stateful notifications viewer", async () => {
@@ -18,13 +18,11 @@ describe("The stateful notifications viewer", async () => {
     });
 
     it("Should display the correct number of notifications", async () => {
-        const tree = renderer.create( < NotificationsViewer / >
-    )
-        ;
+        const tree = renderer.create(<NotificationsViewer />);
 
         await delay();
         const instance = tree.root;
-        const component = instance.findByProps({className: `notifications`});
+        const component = instance.findByProps({ className: `notifications` });
         const text = component.children[0];
         expect(text).toEqual("75 Notifications");
     });

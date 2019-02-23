@@ -1,4 +1,4 @@
-import { mapStateToProps, QuestionDetailDisplay } from '../QuestionDetail'
+import { mapStateToProps, QuestionDetailDisplay } from '../QuestionDetailPage'
 import renderer from 'react-test-renderer';
 import React from 'react';
 
