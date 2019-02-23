@@ -10,10 +10,6 @@ const AppDisplay = () => (
         <div>
             <Link to={`/`}>
                 <h1> 🎉 Isomorphic React App Boilerplate</h1>
-                <h2> 🎉 Atomic Design Methodology</h2>
-                <h3>🎉 Atoms, molecules, organisms, templates, and pages </h3>
-                <h4>🎉 Redux Saga</h4>
-
             </Link>
         </div>
 
