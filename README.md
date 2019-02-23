@@ -1,4 +1,4 @@
-# 💎 Isomorphic React App boilerplate | redux-saga 
+# 💎 Isomorphic React App boilerplate | redux-saga [![Build Status](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga.svg?branch=master)](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga)
 
 ![N|Solid](http://rubix410.sketchpixy.com/imgs/app/homepage/isomorphic.png) 
 
@@ -85,7 +85,7 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-[//]:
+[//]: # 
    [dill]: <https://github.com/PyColors/isomorphic-boilerplate-redux-saga>
    [React]: <https://github.com/facebook/react>
    [Jest]: <https://github.com/facebook/jest>
