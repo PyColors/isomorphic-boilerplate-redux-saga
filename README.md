@@ -1,8 +1,14 @@
-# Isomorphic React App ![N|Solid](https://travis-ci.org/PyColors/isomorphic-react-app.svg?branch=master)
+# 💎 Isomorphic React App boilerplate | redux-saga 
 
-![N|Solid](https://agileengine.com/wordpress/wp-content/uploads/2016/09/redux-saga.png) 
+![N|Solid](http://rubix410.sketchpixy.com/imgs/app/homepage/isomorphic.png) 
 
-Isomorphic React App is a Server-Side Rendering application with All Best Practices.  
+Isomorphic React App is a boilerplate Server-Side Rendering application with All Best Practices.  
+
+#### 🔥 Isomorphic React App Boilerplate
+#### 🗂 Atomic Design Methodology
+#### 🧬 Atoms, molecules, organisms, templates, and pages
+#### 🎉 Server-Side Rendering
+#### 📁 Redux Saga
 
 ### Tech
 
@@ -15,16 +21,16 @@ Isomorphic React App uses a number of open source projects to work properly:
 * [Webpack] - Bundle assets scripts
 * [Babel] - The compiler for writing next generation JavaScript
 
-And of course Isomorphic React App itself is open source with a [public repository][dill] on GitHub.
+And of course Isomorphic React App boilerplate itself is open source with a [public repository][dill] on GitHub.
 
-### Installation
+## Installation
 
 This app requires [Node.js](https://nodejs.org/) v8+ to run.
 
 Install the dependencies.
 
 ```sh
-$ move into directory
+$ move in app
 $ npm install
 ```
 
@@ -49,13 +55,20 @@ Runs the test watcher in an interactive mode.
 ```sh
 $ jest --watch or npm test --watch
 ```
+### Test coverage
+
+Measuring code coverage of program.
+
+```sh
+$ npm test-coverage
+```
 
 ### For production
 
 Runs in prod
 
 ```sh
-$ npm start-test
+$ npm start-prod
 ```
 
 Builds JavaScript for production to the dist folder. 
@@ -72,8 +85,8 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-[//]: # 
-   [dill]: <https://github.com/PyColors/isomorphic-react-app>
+[//]:
+   [dill]: <https://github.com/PyColors/isomorphic-boilerplate-redux-saga>
    [React]: <https://github.com/facebook/react>
    [Jest]: <https://github.com/facebook/jest>
    [Webpack]: <https://github.com/webpack/webpack>
@@ -81,3 +94,4 @@ MIT
    [redux-saga]: <https://github.com/redux-saga/redux-saga>
    [redux]: <https://github.com/reduxjs/redux>
    
+# isomorphic-boilerplate-redux-saga
