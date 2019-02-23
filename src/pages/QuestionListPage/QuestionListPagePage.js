@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TagsList from './TagsList';
+import TagsList from '../../components/molecules/TagsList'
 import { Link } from 'react-router-dom';
 
 const QuestionListItem = ({ title, tags, question_id }) => (

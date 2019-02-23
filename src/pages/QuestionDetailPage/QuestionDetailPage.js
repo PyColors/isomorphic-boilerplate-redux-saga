@@ -1,6 +1,6 @@
 import React from 'react';
 import Markdown from 'react-markdown';
-import TagsList from './TagsList'
+import TagsList from '../../components/molecules/TagsList'
 import { connect } from 'react-redux';
 
 export const QuestionDetailDisplay = ({ title, body, answer_count, tags })=>(

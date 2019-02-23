@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import QuestionList from './components/QuestionList';
-import QuestionDetail from './components/QuestionDetail';
+
+import QuestionList from './pages/QuestionListPage';
+import QuestionDetail from './pages/QuestionDetailPage';
+
 import { Route, Link } from 'react-router-dom';
-import NotificationsViewer from './components/NotificationsViewer';
+import NotificationsViewer from './components/molecules/NotificationsViewer';
 
 const AppDisplay = () => (
     <div>

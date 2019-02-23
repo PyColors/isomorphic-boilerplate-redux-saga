@@ -1,5 +1,5 @@
 import React from 'react';
-import NotificationsService from '../services/NotificationsService'
+import NotificationsService from '../../../services/NotificationsService'
 
 export default class extends React.Component {
     constructor(...args) {
