@@ -18,6 +18,7 @@ Isomorphic React App uses a number of open source projects to work properly:
 * [Redux] - Predictable state container for JavaScript apps
 * [redux-saga] - An alternative side effect model for Redux apps
 * [Jest] - Delightful JavaScript Testing
+* [Lodash] - A modern JavaScript utility library delivering modularity, performance, & extras
 * [Webpack] - Bundle assets scripts
 * [Babel] - The compiler for writing next generation JavaScript
 
@@ -90,6 +91,7 @@ MIT
    [React]: <https://github.com/facebook/react>
    [Jest]: <https://github.com/facebook/jest>
    [Webpack]: <https://github.com/webpack/webpack>
+   [Lodash]: <https://github.com/lodash/lodash>
    [Babel]: <https://babeljs.io/>
    [redux-saga]: <https://github.com/redux-saga/redux-saga>
    [redux]: <https://github.com/reduxjs/redux>
