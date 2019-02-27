@@ -20,6 +20,7 @@ Isomorphic React App uses a number of open source projects to work properly:
 * [Jest] - Delightful JavaScript Testing
 * [Lodash] - A modern JavaScript utility library delivering modularity, performance, & extras
 * [Webpack] - Bundle assets scripts
+* [ESLint] - A fully pluggable tool for identifying and reporting on patterns in JavaScript
 * [Babel] - The compiler for writing next generation JavaScript
 
 And of course Isomorphic React App boilerplate itself is open source with a [public repository][dill] on GitHub.
@@ -92,6 +93,7 @@ MIT
    [Jest]: <https://github.com/facebook/jest>
    [Webpack]: <https://github.com/webpack/webpack>
    [Lodash]: <https://github.com/lodash/lodash>
+   [ESLint]: <https://github.com/eslint/eslint>
    [Babel]: <https://babeljs.io/>
    [redux-saga]: <https://github.com/redux-saga/redux-saga>
    [redux]: <https://github.com/reduxjs/redux>
