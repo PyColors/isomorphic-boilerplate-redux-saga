@@ -117,4 +117,6 @@ app.get(['/', 'questions/:id'], function * (req, res) {
     res.send(index);
 });
 
-app.listen(port, '0.0.0.0', () => console.info(`App listening on ${port}`));
+app.listen(port, '0.0.0.0', () =>
+    console.info(`App listening on ${port} - http://localhost:${port}` )
+);
