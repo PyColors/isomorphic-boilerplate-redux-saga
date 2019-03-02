@@ -1,38 +1,38 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TagsList from '../../components/molecules/TagsList'
 import { Link } from 'react-router-dom';
+import TagsList from '../../components/molecules/TagsList';
 
 const QuestionListItem = ({ title, tags, question_id }) => (
-    <div className="mb-3">
-        <h3>{title}</h3>
-        <div className="mb-2">
-            <TagsList tags={tags} />
-        </div>
-        <div>
-            <Link to={`/questions/${question_id}`}>
-                <button>More details</button>
-            </Link>
-        </div>
+  <div className="mb-3">
+    <h3>{title}</h3>
+    <div className="mb-2">
+      <TagsList tags={tags} />
     </div>
+    <div>
+      <Link to={`/questions/${question_id}`}>
+        <button type="button">More details</button>
+      </Link>
+    </div>
+  </div>
 );
 
 const QuestionList = ({ questions }) => (
-    <div>
-        {questions && questions.length ? (
-            <div>
-                {questions.map(question => (
-                    <QuestionListItem key={question.question_id} {...question} />
-                ))}
-            </div>
-        ) : (
-            <div>... Loading questions...</div>
-        )}
-    </div>
+  <div>
+    {questions && questions.length ? (
+      <div>
+        {questions.map(question => (
+          <QuestionListItem key={question.question_id} {...question} />
+        ))}
+      </div>
+    ) : (
+      <div>... Loading questions...</div>
+    )}
+  </div>
 );
 
 const mapStateToProps = ({ questions }) => ({
-    questions
+  questions
 });
 
 export default connect(mapStateToProps)(QuestionList);

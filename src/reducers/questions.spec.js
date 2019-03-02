@@ -7,9 +7,9 @@ describe('The question reducer', () => {
     const newState = questions(state, { type: 'UNDEFINED_ACTION' });
 
     /**
-         * In this case both toBe and toEqual will return true.
-         * However, the real test in this example is toBe, since we want literally the same object both times
-         */
+     * In this case both toBe and toEqual will return true.
+     * However, the real test in this example is toBe, since we want literally the same object both times
+     */
     expect(newState).toEqual(stateClone);
     expect(newState).toBe(state);
   });
@@ -17,13 +17,15 @@ describe('The question reducer', () => {
   it('should add new questions', () => {
     const state = [{ question_id: 'toto' }, { question_id: 'coco' }];
     const newQuestion = { question_id: 'baz' };
-    const newQuestionClone = { question_id: 'baz' };
-    const newState = questions(state, { type: 'FETCHED_QUESTION', question: newQuestion });
+    const newState = questions(state, {
+      type: 'FETCHED_QUESTION',
+      question: newQuestion
+    });
 
     /*
-         * newState has newQuestion value, toContain works
-         * state does not contain newQuestion at all
-         */
+     * newState has newQuestion value, toContain works
+     * state does not contain newQuestion at all
+     */
     expect(newState).toContain(newQuestion);
     expect(state).not.toContain(newQuestion);
     expect(newState).toHaveLength(3);

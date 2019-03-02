@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
 
-export default ({tags}) => (
-    <div>
-        {tags.map(tag => <code key={tag}>{tag}</code>)}
-    </div>
-)
+export default ({ tags }) => (
+  <div>
+    {tags.map(tag => (
+      <code key={tag}>{tag}</code>
+    ))}
+  </div>
+);
