@@ -12,6 +12,10 @@ import { ConnecteRouter } from 'react-router-redux';
 import createHistory from 'history/createMemoryHistory';
 import path from 'path';
 import App from '../src/App';
+import {
+  devMiddleware,
+  hotMiddleware
+} from './middlewares/hotModuleReplacement';
 import getStore from '../src/getStore';
 import { questions, question } from '../data/api-real-url';
 
@@ -63,17 +67,13 @@ app.get('/api/questions/:id', function*(req, res) {
 });
 
 if (process.env.NODE_ENV === 'development') {
-  // Import statement
-  const config = require('../config/webpack/webpack.config.dev.babel').default;
-  const compiler = webpack(config);
+  /**
+   * Hot Module Replacement from middleware
+   * use webpack.HotModuleReplacementPlugin()
+   */
+  app.use(devMiddleware);
 
-  app.use(
-    require('webpack-dev-middleware')(compiler, {
-      noInfo: true
-    })
-  );
-
-  app.use(require('webpack-hot-middleware')(compiler));
+  app.use(hotMiddleware);
 } else {
   app.use(express.static(path.resolve(__dirname, '../dist')));
 }
