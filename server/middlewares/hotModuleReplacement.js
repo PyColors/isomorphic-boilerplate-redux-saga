@@ -1,13 +1,14 @@
-// Hot Module Replacement solution with Server Side Rendering
-// - webpack-dev-middleware
-// - webpack-hot-middleware
-
+/**
+ * Hot Module Replacement with Server Side Rendering
+ * - webpack-dev-middleware
+ * - webpack-hot-middleware
+ */
 import webpack from 'webpack';
 
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 
-// import statement
+// Import statement
 const config = require('../../config/webpack/webpack.config.dev.babel').default;
 
 const compiler = webpack(config);

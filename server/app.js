@@ -70,9 +70,10 @@ if (process.env.NODE_ENV === 'development') {
   /**
    * Hot Module Replacement from middleware
    * use webpack.HotModuleReplacementPlugin()
+   *  - devMiddleware
+   *  - hotMiddleware
    */
   app.use(devMiddleware);
-
   app.use(hotMiddleware);
 } else {
   app.use(express.static(path.resolve(__dirname, '../dist')));
