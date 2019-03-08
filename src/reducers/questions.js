@@ -1,5 +1,13 @@
 import unionWith from 'lodash/unionWith';
 
+/**
+ * Manage how to render the state of questions
+ * @param state
+ * @param type
+ * @param questions
+ * @param question
+ * @returns {Array}
+ */
 export const questions = (state = [], { type, questions, question }) => {
   const questionEquality = (a = {}, b = {}) => a.question_id === b.question_id;
 
