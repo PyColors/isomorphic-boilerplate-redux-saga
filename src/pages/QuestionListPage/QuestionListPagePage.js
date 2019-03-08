@@ -26,7 +26,7 @@ const QuestionList = ({ questions }) => (
         ))}
       </div>
     ) : (
-      <div>... Loading questions...</div>
+      <div>Loading questions...</div>
     )}
   </div>
 );
