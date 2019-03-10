@@ -27,12 +27,7 @@ const useServerRender = argv.ServerRender === 'true';
 questionsRoutes(app);
 
 if (process.env.NODE_ENV === 'development') {
-  /**
-   * Hot Module Replacement from middleware
-   * use webpack.HotModuleReplacementPlugin()
-   *  - devMiddleware
-   *  - hotMiddleware
-   */
+  // Hot Module Replacement from middleware
   app.use(devMiddleware);
   app.use(hotMiddleware);
 } else {

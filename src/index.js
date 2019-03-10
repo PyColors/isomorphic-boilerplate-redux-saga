@@ -30,7 +30,7 @@ const render = AppClient => {
         <AppClient />
       </ConnectedRouter>
     </Provider>,
-    document.getElementById('AppContainer')
+    document.getElementById('root')
   );
 };
 
