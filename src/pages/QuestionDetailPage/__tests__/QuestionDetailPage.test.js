@@ -9,7 +9,7 @@ describe('The Question Detail <Component', () => {
      * without without adding libraries.
      */
     describe('mapStateToProps', () => {
-      it.skip('should map the state to props correctly', () => {
+      it('should map the state to props correctly', () => {
         const sampleQuestion = {
           question_id: 42,
           body: 'Lorem Ipsum'

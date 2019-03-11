@@ -10,13 +10,13 @@ import { ConnecteRouter } from 'react-router-redux';
 import createHistory from 'history/createMemoryHistory';
 import path from 'path';
 import App from '../src/App';
+import { questionsRoutes } from './routes/questionsRoutes';
+import { getQuestions, getQuestion } from './isomorphic';
+import getStore from '../src/getStore';
 import {
   devMiddleware,
   hotMiddleware
 } from './middlewares/hotModuleReplacement';
-import { questionsRoutes } from './routes/questionsRoutes';
-import { getQuestions, getQuestion } from './isomorphic';
-import getStore from '../src/getStore';
 
 const app = express();
 

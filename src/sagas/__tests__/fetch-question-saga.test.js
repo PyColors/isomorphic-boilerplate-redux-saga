@@ -6,7 +6,7 @@ import { handleFetchQuestion } from '../fetch-question-saga';
  *  The module, isomorphic fetch, is conveniently mocked automatically be including the file __mocks__/isomorphic-fetch.js adjacent to to the Node.js folder
  * 2) we're using an async function to automatically deal with the fact that our app isn't synchronous
  */
-describe.skip('Fetch questions saga', () => {
+describe('Fetch questions saga', () => {
   beforeAll(() => {
     fetch.__setValue([{ question_id: 42 }]);
   });
