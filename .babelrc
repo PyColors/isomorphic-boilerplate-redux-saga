@@ -1,7 +1,14 @@
 {
-  "presets":[
+  "plugins": ["transform-object-rest-spread", "dynamic-import-webpack"],
+  "presets": [
     "react",
-    "env"
-  ],
-  "plugins": ["transform-object-rest-spread"]
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 1 version", "ie >= 11"]
+        }
+      }
+    ]
+  ]
 }
