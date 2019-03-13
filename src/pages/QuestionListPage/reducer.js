@@ -6,7 +6,7 @@
  */
 
 import unionWith from 'lodash/unionWith';
-import { FETCHED_QUESTIONS } from './constants';
+// import { FETCHED_QUESTIONS } from './constants';
 
 /**
  * Manage how to render the state of questions
@@ -14,18 +14,15 @@ import { FETCHED_QUESTIONS } from './constants';
  * @param type
  * @param questions
  * @param action
- * @returns New state
+ * @returns Array state
  */
-const questions = (state = [], { type, questions }, action) => {
-  // unionWith from lodash
+export const questions = (state = [], { type, questions, action }) => {
   const questionEquality = (a = {}, b = {}) => a.question_id === b.question_id;
 
-  switch (action.type) {
+  switch (type) {
     case 'FETCHED_QUESTIONS':
-      return state.set((state = unionWith(state, questions, questionEquality)));
+      return (state = unionWith(state, questions, questionEquality));
     default:
       return state;
   }
 };
-
-export default questions;
