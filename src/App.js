@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { Route, Link } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import QuestionList from './pages/QuestionListPage';
 import QuestionDetail from './pages/QuestionDetailPage';
+import NotFound from './pages/NotFound/NotFound';
 
 import NotificationsViewer from './components/molecules/NotificationsViewer';
 
@@ -26,12 +27,17 @@ const AppDisplay = () => (
     </div>
 
     <div>
-      <Route exact path="/" render={() => <QuestionList />} />
-      <Route
-        exact
-        path="/questions/:id"
-        render={({ match }) => <QuestionDetail question_id={match.params.id} />}
-      />
+      <Switch>
+        <Route exact path="/" render={() => <QuestionList />} />
+        <Route
+          exact
+          path="/questions/:id"
+          render={({ match }) => (
+            <QuestionDetail question_id={match.params.id} />
+          )}
+        />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   </div>
 );
