@@ -1,17 +1,6 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 class Html extends Component {
-  static renderSnare(isNotLocal) {
-    if (isNotLocal) {
-      return (
-        <Fragment>
-          <input type="hidden" id="ioBlackBox" />
-          <script src="https://mpsnare.iesnare.com/snare.js" />
-        </Fragment>
-      );
-    }
-  }
-
   render() {
     /* eslint-disable */
     return (
@@ -24,12 +13,9 @@ class Html extends Component {
             id="root"
             dangerouslySetInnerHTML={{ __html: this.props.children }}
           />
-
-          {/* eslint-disable-next-line */}
         </body>
       </html>
     );
-    /* eslint-enable */
   }
 }
 
