@@ -6,7 +6,7 @@ import { get } from 'request-promise';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
 import React from 'react';
-import { ConnecteRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createMemoryHistory';
 import path from 'path';
 import App from '../src/App';
@@ -61,9 +61,9 @@ app.get(['/', 'questions/:id'], function*(req, res) {
   if (useServerRender) {
     const appRendered = renderToString(
       <Provider store={store}>
-        <ConnecteRoute history={history}>
+        <ConnectedRouter history={history}>
           <App />
-        </ConnecteRoute>
+        </ConnectedRouter>
       </Provider>
     );
     index = index.replace(`<%= preloadedApplication %>`, appRendered);

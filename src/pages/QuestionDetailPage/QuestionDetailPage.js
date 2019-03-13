@@ -1,3 +1,8 @@
+/**
+ * This page return the list of the question collection
+ * and takes: title, body, answerCount, tags from mapStateToProps
+ */
+
 import React from 'react';
 import Markdown from 'react-markdown';
 import { connect } from 'react-redux';
