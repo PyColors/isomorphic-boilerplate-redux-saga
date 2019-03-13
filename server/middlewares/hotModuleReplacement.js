@@ -15,7 +15,16 @@ const compiler = webpack(config);
 
 const devMiddleware = webpackDevMiddleware(compiler, {
   noInfo: true,
-  publicPath: '/'
+  publicPath: '/',
+  stats: {
+    assets: false,
+    colors: true,
+    version: false,
+    hash: false,
+    timings: false,
+    chunks: false,
+    chunkModules: false
+  }
 });
 
 const hotMiddleware = webpackHotMiddleware(compiler);
