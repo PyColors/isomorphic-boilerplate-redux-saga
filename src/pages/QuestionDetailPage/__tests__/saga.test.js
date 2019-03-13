@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-fetch';
-import { handleFetchQuestion } from '../fetch-question-saga';
+import { handleFetchQuestion } from '../saga';
 /**
  * This test is an example of two important Jest testing principles,
  * 1) we're mocking the "fetch" module, so that we don't actually make a request every time we run the test
