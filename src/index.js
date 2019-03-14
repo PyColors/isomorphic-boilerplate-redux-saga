@@ -43,11 +43,10 @@ if (module.hot) {
   });
 }
 
-// render(App);
-
+// Rendering App;
 store.subscribe(() => {
   const state = store.getState();
-  if (state.questions.length > 0) {
+  if (state.question.length > 0 || state.questions.length > 0) {
     console.log('coco Server Rendering');
     render(App);
   } else {
