@@ -6,13 +6,19 @@ import createHistory from 'history/createHashHistory';
 import getStore from './getStore';
 import App from './App';
 
+// Fetch questions from
+import * as actions from './pages/QuestionListPage/constants';
+
 const history = createHistory();
 
 const store = getStore(history);
 
 const fetchDataForLocation = location => {
   if (location.pathname === '/') {
-    store.dispatch({ type: 'REQUEST_FETCH_QUESTIONS' });
+    // Fetch questions from QuestionsListPage saga
+    store.dispatch({
+      type: actions.REQUEST_FETCH_QUESTIONS
+    });
   }
 
   if (location.pathname.includes('questions')) {

@@ -6,18 +6,21 @@
 
 import { put, take } from 'redux-saga/effects';
 import fetch from 'isomorphic-fetch';
+import * as actions from './constants';
 
 /**
  * Get the data from questions collection
- * and save under const
  */
 export default function*() {
-  yield take('REQUEST_FETCH_QUESTIONS');
+  yield take(actions.REQUEST_FETCH_QUESTIONS);
 
   const raw = yield fetch('/api/questions');
   const json = yield raw.json();
   const questions = json.items;
 
   console.log('coco questions', questions);
-  yield put({ type: 'FETCHED_QUESTIONS', questions });
+  yield put({
+    type: actions.FETCHED_QUESTIONS,
+    questions
+  });
 }

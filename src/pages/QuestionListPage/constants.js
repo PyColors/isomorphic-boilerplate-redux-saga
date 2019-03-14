@@ -8,3 +8,6 @@
 
 export const FETCHED_QUESTIONS =
   'boilerplate/QuestionListPage/FETCHED_QUESTIONS';
+
+export const REQUEST_FETCH_QUESTIONS =
+  'boilerplate/QuestionListPage/REQUEST_FETCH_QUESTIONS';

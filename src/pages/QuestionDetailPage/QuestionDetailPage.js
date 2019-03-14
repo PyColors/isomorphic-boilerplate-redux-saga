@@ -28,7 +28,7 @@ export const QuestionDetailDisplay = ({ title, body, answerCount, tags }) => (
 );
 
 export const mapStateToProps = (state, ownProps) => ({
-  ...state.questions.find(
+  ...state.question.find(
     /* eslint-disable-next-line */
     ({ question_id }) => question_id == ownProps.question_id
   )
