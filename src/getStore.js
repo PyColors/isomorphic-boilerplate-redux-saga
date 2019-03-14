@@ -2,9 +2,14 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { createLogger } from 'redux-logger';
 import { routerReducer as router, routerMiddleware } from 'react-router-redux';
-import fetchQuestionsSaga from './sagas/fetch-questions-saga';
-import fetchQuestionSaga from './sagas/fetch-question-saga';
-import * as reducers from './reducers';
+
+// Sagas
+import fetchQuestionsSaga from './pages/QuestionListPage/saga';
+import fetchQuestionSaga from './pages/QuestionDetailPage/saga';
+
+// Reducers
+import * as questions from './pages/QuestionListPage/reducer';
+import * as question from './pages/QuestionDetailPage/reducer';
 
 export default function(history, defaultState) {
   const sagaMiddeleware = createSagaMiddleware();
@@ -17,12 +22,14 @@ export default function(history, defaultState) {
   }
   const store = createStore(
     combineReducers({
-      ...reducers,
+      ...questions,
+      ...question,
       router
     }),
     defaultState,
     applyMiddleware(...middlewareChain)
   );
+  // sagas
   sagaMiddeleware.run(fetchQuestionsSaga);
   sagaMiddeleware.run(fetchQuestionSaga);
   return store;
