@@ -15,7 +15,7 @@ describe('The Question Detail <Component', () => {
           body: 'Lorem Ipsum'
         };
         const appState = {
-          questions: [sampleQuestion]
+          question: [sampleQuestion]
         };
         const ownProps = {
           question_id: 42
