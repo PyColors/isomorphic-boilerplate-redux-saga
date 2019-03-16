@@ -6,8 +6,11 @@ import createHistory from 'history/createHashHistory';
 import getStore from './getStore';
 import App from './App';
 
-// Fetch questions from
-import * as actions from './pages/QuestionListPage/constants';
+// Fetch questions from QuestionListPage
+import { REQUEST_FETCH_QUESTIONS } from './pages/QuestionListPage/constants';
+
+// Fetch question from QuestionDetailPage
+import { REQUEST_FETCH_QUESTION } from './pages/QuestionDetailPage/constants';
 
 const history = createHistory();
 
@@ -17,13 +20,14 @@ const fetchDataForLocation = location => {
   if (location.pathname === '/') {
     // Fetch questions from QuestionsListPage saga
     store.dispatch({
-      type: actions.REQUEST_FETCH_QUESTIONS
+      type: REQUEST_FETCH_QUESTIONS
     });
   }
 
   if (location.pathname.includes('questions')) {
+    // Fetch questions from QuestionDetailPage saga
     store.dispatch({
-      type: 'REQUEST_FETCH_QUESTION',
+      type: REQUEST_FETCH_QUESTION,
       question_id: location.pathname.split('/')[2]
     });
   }
