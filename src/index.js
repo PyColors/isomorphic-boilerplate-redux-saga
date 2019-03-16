@@ -1,37 +1,14 @@
-import ReactDom from 'react-dom';
 import React from 'react';
+import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import createHistory from 'history/createHashHistory';
-import getStore from './getStore';
+
 import App from './App';
 
-// Fetch questions from QuestionListPage
-import { REQUEST_FETCH_QUESTIONS } from './pages/QuestionListPage/constants';
-
-// Fetch question from QuestionDetailPage
-import { REQUEST_FETCH_QUESTION } from './pages/QuestionDetailPage/constants';
-
-const history = createHistory();
-
-const store = getStore(history);
-
-const fetchDataForLocation = location => {
-  if (location.pathname === '/') {
-    // Fetch questions from QuestionsListPage saga
-    store.dispatch({
-      type: REQUEST_FETCH_QUESTIONS
-    });
-  }
-
-  if (location.pathname.includes('questions')) {
-    // Fetch questions from QuestionDetailPage saga
-    store.dispatch({
-      type: REQUEST_FETCH_QUESTION,
-      question_id: location.pathname.split('/')[2]
-    });
-  }
-};
+// utils
+import history from './utils/history';
+import store from './utils/store';
+import fetchDataForLocation from './utils/fetchDataForLocation';
 
 const render = AppClient => {
   ReactDom.render(
@@ -63,6 +40,3 @@ store.subscribe(() => {
     console.log('coco not Server Rendering');
   }
 });
-
-fetchDataForLocation(history.location);
-history.listen(fetchDataForLocation);
