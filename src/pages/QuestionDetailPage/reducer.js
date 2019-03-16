@@ -1,4 +1,5 @@
 import unionWith from 'lodash/unionWith';
+import * as actions from './constants';
 
 /**
  * Manage how to render the state of questions
@@ -11,7 +12,7 @@ export const question = (state = [], { type, question }) => {
   const questionEquality = (a = {}, b = {}) => a.question_id === b.question_id;
 
   switch (type) {
-    case 'FETCHED_QUESTION':
+    case actions.FETCHED_QUESTION:
       return (state = unionWith([question], state, questionEquality));
     default:
       return state;
