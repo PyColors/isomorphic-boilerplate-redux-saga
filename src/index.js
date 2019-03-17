@@ -36,7 +36,5 @@ store.subscribe(() => {
   if (state.question.length > 0 || state.questions.length > 0) {
     console.log('coco Server Rendering');
     render(App);
-  } else {
-    console.log('coco not Server Rendering');
   }
 });
