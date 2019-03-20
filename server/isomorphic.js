@@ -2,12 +2,11 @@ import { get } from 'request-promise';
 import { question, questions } from '../data/api-real-url';
 import fs from 'fs-extra';
 import { argv } from 'optimist';
-
-const useLiveData = argv.useLiveData === 'true';
+import config from './config';
 
 export function* getQuestions() {
   let data;
-  if (useLiveData) {
+  if (config.useLiveData) {
     data = yield get(questions, { gzip: true });
   } else {
     data = yield fs.readFile('../data/mock-questions.json', 'utf-8');
@@ -18,7 +17,7 @@ export function* getQuestions() {
 
 export function* getQuestion(question_id) {
   let data;
-  if (useLiveData) {
+  if (config.useLiveData) {
     data = yield get(question(question_id), { gzip: true, json: true });
   } else {
     const questions = yield getQuestions();

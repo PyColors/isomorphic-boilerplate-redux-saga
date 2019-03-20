@@ -18,7 +18,6 @@ export default function*() {
   const json = yield raw.json();
   const questions = json.items;
 
-  console.log('coco questions', questions);
   yield put({
     type: actions.FETCHED_QUESTIONS,
     questions

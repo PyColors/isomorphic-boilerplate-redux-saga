@@ -9,6 +9,7 @@ import React from 'react';
 import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createMemoryHistory';
 import path from 'path';
+import config from './config';
 import App from '../src/App';
 import { questionsRoutes } from './routes/questionsRoutes';
 import { getQuestions, getQuestion } from './isomorphic';
@@ -19,9 +20,6 @@ import {
 } from './middlewares/hotModuleReplacement';
 
 const app = express();
-
-// const useLiveData = argv.useLiveData === 'true';
-const useServerRender = argv.ServerRender === 'true';
 
 // Questions routes
 questionsRoutes(app);
@@ -58,7 +56,7 @@ app.get(['/', 'questions/:id'], function*(req, res) {
 
   const store = getStore(history, initialState);
 
-  if (useServerRender) {
+  if (config.useServerRender) {
     const appRendered = renderToString(
       <Provider store={store}>
         <ConnectedRouter history={history}>
