@@ -1,7 +1,6 @@
 import express from 'express';
 import yields from 'express-yields';
 import fs from 'fs-extra';
-import { argv } from 'optimist';
 import { get } from 'request-promise';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';

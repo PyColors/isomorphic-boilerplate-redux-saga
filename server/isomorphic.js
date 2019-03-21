@@ -1,7 +1,6 @@
 import { get } from 'request-promise';
 import { question, questions } from '../data/api-real-url';
 import fs from 'fs-extra';
-import { argv } from 'optimist';
 import config from './config';
 
 export function* getQuestions() {
