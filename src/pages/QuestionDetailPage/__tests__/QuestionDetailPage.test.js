@@ -4,10 +4,9 @@ import { mapStateToProps, QuestionDetailDisplay } from '../QuestionDetailPage';
 
 describe('The Question Detail <Component', () => {
   describe('The Container Element', () => {
-    /**
-     * As Map State to Props is a pure function, it's lovely test it 😎
-     * without without adding libraries.
-     */
+    // As Map State to Props is a pure function, it's lovely to test it 😎
+    // without extra libraries.
+
     describe('mapStateToProps', () => {
       it('should map the state to props correctly', () => {
         const sampleQuestion = {
