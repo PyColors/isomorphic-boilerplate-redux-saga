@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer>
-    <div>
-      <Link to="/">
-        <h4>Isomorphic React App Boilerplate</h4>
-      </Link>
+    <div className="mui-container mui--text-center">
+      Made with ♥ by <h4>Isomorphic React App Boilerplate</h4>{' '}
+      <a href="https://www.muicss.com">MUICSS</a>
     </div>
   </footer>
 );

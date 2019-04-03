@@ -2,7 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <header>
+  <header className="mui-appbar mui--z1">
+    <div className="mui-container">
+      <table>
+        <tr className="mui--appbar-height">
+          <td className="mui--text-title">Isomorphic React App Boilerplate</td>
+          <td className="mui--text-right">
+            <ul className="mui-list--inline mui--text-body2">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
     <div>
       <Link to="/">
         <h1>
