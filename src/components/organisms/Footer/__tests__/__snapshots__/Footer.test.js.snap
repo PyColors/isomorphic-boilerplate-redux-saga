@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Footer <Component The display element Should not regress 1`] = `<footer />`;
