@@ -6,8 +6,8 @@ node_js:
 os: osx
 
 script:
-  - npm test
-  - npm build
+  - yarn test
+  - yarn build
 
 cache:
   yarn: true
