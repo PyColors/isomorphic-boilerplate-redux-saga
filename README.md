@@ -1,6 +1,6 @@
 # 💎 Isomorphic React App boilerplate | redux-saga [![Build Status](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga.svg?branch=master)](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga)
 
-![N|Solid](http://rubix410.sketchpixy.com/imgs/app/homepage/isomorphic.png) 
+![N|Solid](https://miro.medium.com/max/760/1*0rQPWeFL-s65cG9d-MMm6A.png) 
 
 Isomorphic React App is a boilerplate Server-Side Rendering application with All Best Practices.  
 
