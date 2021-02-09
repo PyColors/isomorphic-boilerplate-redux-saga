@@ -5,6 +5,10 @@ node_js:
   
 os: osx
 
+node_js:
+  - 10
+  - 8
+
 script:
   - yarn test
   - yarn build
@@ -13,3 +17,4 @@ cache:
   yarn: true
   directories:
     - node_modules
+    
