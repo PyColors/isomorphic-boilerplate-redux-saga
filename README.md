@@ -2,6 +2,13 @@
 
 ![N|Solid](https://miro.medium.com/max/760/1*0rQPWeFL-s65cG9d-MMm6A.png) 
 
+### Status
+
+[![Build Status](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga.svg?branch=master)](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PyColors/isomorphic-boilerplate-redux-saga/master/LICENSE)
+[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-clean-blog/status.svg)](https://david-dm.org/PyColors/isomorphic-boilerplate-redux-saga)
+[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-clean-blog/dev-status.svg)](https://david-dm.org/PyColors/isomorphic-boilerplate-redux-saga?type=dev)
+
 Isomorphic React App is a boilerplate Server-Side Rendering application with All Best Practices.  
 
 #### 🔥 Isomorphic React App Boilerplate
