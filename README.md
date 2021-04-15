@@ -1,4 +1,4 @@
-# 💎 Isomorphic React App boilerplate | redux-saga [![Build Status](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga.svg?branch=master)](https://travis-ci.org/PyColors/isomorphic-boilerplate-redux-saga)
+# 💎 Isomorphic React App boilerplate | redux-saga
 
 ![N|Solid](https://miro.medium.com/max/760/1*0rQPWeFL-s65cG9d-MMm6A.png) 
 
